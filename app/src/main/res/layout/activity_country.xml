@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CountryActivity">
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:drawablePadding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:padding="8dp"
+        android:background="@drawable/search_back"
+        android:layout_margin="8dp"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_search"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginVertical="12dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black"
+            android:fontFamily="@string/bold"
+            android:layout_marginStart="12dp"
+            android:layout_alignParentStart="true"
+            android:text="Country Name"/>
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:fontFamily="@string/regular"
+             android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+             android:layout_marginEnd="12dp"
+            android:text="Total Cases"/>
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/countries"/>
+
+</LinearLayout>
